@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --primary-Color:#0E5DAE;
+}
+ul,li{
+    text-decoration: none;
+    list-style: none;
+}
+ul,li,a{
+    text-decoration: none;
+}
+footer{
+    color: #ffffff;
+    height: 300px;
+    width: 100%;
+    background-color: #0E5DAE;
+}
+/* for trending image and title */
+.border-trending{
+border-left: 20px solid #0E5DAE ;
+}
+.trending-image{
+    height: 100px;
+    width: 120px;
+    object-fit: cover;
+}

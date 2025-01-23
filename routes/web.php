@@ -19,3 +19,5 @@ Route::resource('admin/category',CategoryController::class);
 Route::resource('admin/articles',ArticleController::class)->names('articles');
 
 Route::get('contact',[EmailController::class,'SendEmail']);
+
+Route::get('footer',[PageController::class,'FooterCategory']);
