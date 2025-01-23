@@ -17,19 +17,19 @@
                                     @csrf
                                     <div class="form-group">
                                         <label>Title <span class="text-danger">*</span> </label>
-                                        <input type="text" name="title" class="form-control" required >
+                                        <input type="text" name="title" class="form-control" required>
                                     </div>
-                                <div class="mb-3">
-                                    <label  class="form-label">Description</label>
-                                    <textarea class="form-control summernote" name="description" rows="3"></textarea>
-                                </div>
-                                <label for="Category">Category</label>
-                                <select name="category_id[]" class="form-control select2"  multiple>
-                                    <option value="">Select</option>
-                                    @foreach ($data as $value )
-                                        <option value="{{ $value->id }}">{{ $value->name }}</option>
-                                    @endforeach
-                                </select>
+                                    <div class="mb-3">
+                                        <label class="form-label">Description</label>
+                                        <textarea class="form-control summernote" name="description" rows="3"></textarea>
+                                    </div>
+                                    <label for="category_id">Category</label>
+                                    <select name="category_id[]" id="category_id" class="form-control select2" multiple>
+                                        <option value="" disabled>Select Categories</option>
+                                        @foreach ($data as $value)
+                                            <option value="{{ $value->id }}">{{ $value->name }}</option>
+                                        @endforeach
+                                    </select>
                                     <div class="form-group">
                                         <label>Image<span class="text-danger">*</span></label>
                                         <input type="file" name="image" class="form-control" required>

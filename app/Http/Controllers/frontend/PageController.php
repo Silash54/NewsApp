@@ -22,7 +22,7 @@ class PageController extends BaseController
     public function article($id)
     {
         $articles = Article::find($id);
-        //$articles::increment('views');
+        $articles::increment('views');
         return view('frontend.layout.article', compact('articles'));
     }
 }

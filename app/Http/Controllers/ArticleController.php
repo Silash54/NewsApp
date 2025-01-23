@@ -91,6 +91,6 @@ class ArticleController extends Controller
     {
         $article = Article::find($id);
         $article->delete();
-        return redirect()->route('article.index');
+        return redirect()->route('articles.index');
     }
 }
